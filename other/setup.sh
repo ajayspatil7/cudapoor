@@ -20,4 +20,13 @@ sudo apt-get update
 echo "Installing CUDA-toolkit"
 sudo apt-get -y install cuda-toolkit-12-6
 
+# Command 5
+echo "Exporting the PATH and LD_LIBRARY_PATH variables"
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+# Command 6
+source ~/.bashrc
+
+
 echo "Success!"
